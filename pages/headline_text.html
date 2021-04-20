@@ -2,10 +2,15 @@
 <html>
 	<head>
 		<title>Disco Ninjas</title>
-		<script src="https://code.jquery.com/jquery-3.5.1.js></script>
+		
+	</head>
+	<body>
+		<h1>Scraping</h1>
+		<div id="headline_teks"></div>
+		<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
 		<script type="text/javascript">
 			$(function(){
-				$.get('headline.txt', function(obj){
+				$.get('headline.json', function(obj){
 					var str='<table border=1>';
 					str +="<tr><td>No</td><td>Judul Headline</td></tr>";
 					$.each(obj,function(n,data){
@@ -13,13 +18,9 @@
 						str+="<td>"+data.judul+"</td></tr>";
 					});
 					str+="</table>";
-					$('#headline_json').html(str);
+					$('#headline_teks').html(str);
 				});
 			});
 		</script>
-	</head>
-	<body>
-		<h1>Scraping</h1>
-		<div id="headline_teks"></div>
 	</body>
 </html>
