@@ -6,11 +6,14 @@
 		<script type="text/javascript">
 			$(function(){
 				$.get('headline.txt', function(obj){
-					var str='';
-					for (var i=0; i<headline.length; i++){
-						str+=hedline[i]+'</br>';
-					}
-					$('#headline_teks').html(str);
+					var str='<table border=1>';
+					str +="<tr><td>No</td><td>Judul Headline</td></tr>";
+					$.each(obj,function(n,data){
+						str+="<str><td>"+(n+1)+"</td>";
+						str+="<td>"+data.judul+"</td></tr>";
+					});
+					str+="</table>";
+					$('#headline_json').html(str);
 				});
 			});
 		</script>
