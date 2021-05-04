@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<!--
+Template Name: Fluffster
+Author: <a href="https://www.os-templates.com/">OS Templates</a>
+Author URI: https://www.os-templates.com/
+Copyright: OS-Templates.com
+Licence: Free to use under our free template licence terms
+Licence URI: https://www.os-templates.com/template-terms
+-->
+<html lang="">
+<!-- To declare your language - read more here: https://www.w3.org/International/questions/qa-html-language-declarations -->
+<head>
+  <script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"></script>
+  <script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"></script>
+  <script>
+    const chartData = [{
+            "value": "4:02",
+            "label": "Leave The Door Open"
+      },
+      {
+            "value": "5:44",
+            "label": "To the Bone"
+      },
+      {
+            "value": "4:17",
+            "label": "It Will Rain"
+      },
+      {
+            "value": "3:16",
+            "label": "HEARTBREAK ANNIVERSARY"
+      },
+      {
+            "value": "3:18",
+            "label": "Peaches (feat. Daniel Caesar & GIV\u0112ON)"
+      },
+      {
+            "value": "3:28",
+            "label": "Kiss Me More (feat. SZA)"
+      },
+      {
+            "value": "2:52",
+            "label": "In the morning"
+      },
+      {
+            "value": "3:35",
+            "label": "deja vu"
+      },
+      {
+            "value": "3:25",
+            "label": "After School"
+      },
+      {
+            "value": "3:31",
+            "label": "Blue Jeans"
+      }];
+
+    const chartConfig = {
+    type: 'column2d',
+    renderAt: 'chart-long',
+    width: '100%',
+    height: '400',
+    dataFormat: 'json',
+    dataSource: {
+        "chart": {
+            "caption": "TOP 10 Lagu dengan Durasi Terpanjang",
+            "subCaption": "Apple Music",
+            "xAxisName": "Judul Lagu",
+            "yAxisName": "Durasi (dalam seconds)",
+            "numberSuffix": "S",
+            "theme": "fusion",
+            },
+       
+        "data": chartData
+        }
+    };
+    FusionCharts.ready(function(){
+    var fusioncharts = new FusionCharts(chartConfig);
+    fusioncharts.render();
+    });
+
+</script>
+
+<script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"></script>
+	<script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"></script>
+	<script type="text/javascript">
+		FusionCharts.ready(function(){
+			var chartObj = new FusionCharts({
+    type: 'line',
+    renderAt: 'chart-most',
+    width: '680',
+    height: '390',
+    dataFormat: 'json',
+    dataSource: {
+        "chart": {
+            "theme": "fusion",
+            "caption": "TOP 10 Penyanyi dengan Lagu Terbanyak",
+            "subCaption": "Apple Music",
+            "xAxisName": "Penyanyi",
+            "yAxisName": "Jumlah Lagu",
+            "lineThickness": "2"
+        },
+        "data": [{
+            label: "Bruno Mars",
+    value: "6"
+  },
+  {
+    label: "Pamungkas",
+    value: "6"
+  },
+  {
+    label: "Justin Bieber",
+    value: "6"
+  },
+  {
+    label: "Ariana Grande",
+    value: "5"
+  },
+  {
+    label: "Blackpink",
+    value: "4"
+  },
+  {
+    label: "BTS",
+    value: "4"
+  },
+  {
+    label: "The Weeknd",
+    value: "3"
+  },
+  {
+    label: "Ardhito Pramono",
+    value: "2"
+            }
+        ],
+    }
+});
+			chartObj.render();
+		});
+	</script>
+
+<script type="text/javascript">
+  FusionCharts.ready(function(){
+    var chartObj = new FusionCharts({
+  type: 'bar3d',
+  renderAt: 'chart-local',
+  width: '500',
+  height: '400',
+  dataFormat: 'json',
+  dataSource: {
+      "chart": {
+          "theme": "fusion",
+          "caption": "Penyanyi Asal Luar Negeri dan Indonesia",
+          "subCaption": "Apple Music",
+          "yAxisName": "Asal Penyanyi",
+          "alignCaptionWithCanvas": "0"
+      },
+      "data": [{
+              "label": "Penyanyi Asal Luar Negeri",
+              "value": "71"
+          },
+          {
+              "label": "Penyanyi Asal Indonesia",
+              "value": "28"
+          }
+      ]
+  }
+});
+    chartObj.render();
+  });
+</script>
+<script type="text/javascript">
+  FusionCharts.ready(function(){
+    var chartObj = new FusionCharts({
+  type: 'pie3d',
+  renderAt: 'chart-man',
+  width: '450',
+  height: '300',
+  dataFormat: 'json',
+  dataSource: {
+      "chart": {
+          "caption": "Perbandingan Penyanyi Wanita dan Pria",
+          "subCaption": "Apple Music",
+          "showPercentInTooltip": "0",
+          "decimals": "1",
+          "useDataPlotColorForLabels": "1",
+          "theme": "fusion"
+      },
+      "data": [{
+          "label": "Penyanyi Wanita",
+          "value": "44"
+      }, {
+          "label": "Penyanyi Pria",
+          "value": "106"
+      }]
+  }
+}
+);
+    chartObj.render();
+  });
+</script>
+
+<title>Disco Ninjas</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link href="../layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+</head>
+
+
+<body id="top">
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row0">
+  <div id="topbar" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <ul class="nospace">
+      <li><a href="../index.html" title="Home"><i class="fas fa-home"></i></a></li>
+      <li><a href="#" title="Send a Mail"><i class="far fa-envelope"></i></a></li>
+      <li><a href="#" title="Help Centre"><i class="far fa-life-ring"></i></a></li>
+      <li><a href="#" title="Login"><i class="fas fa-sign-in-alt"></i></a></li>
+      <li><a href="#" title="Sign Up"><i class="fas fa-edit"></i></a></li>
+    </ul>
+    <!-- ################################################################################################ -->
+  </div>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row1">
+  <header id="header" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <section>
+      <div><i class="fas fa-phone"></i> +00 (123) 456 7890</div>
+      <div>
+        <h1 id="logo"><i class="fas fa-dove"></i> <a href="../index.html">Disco Ninjas</a></h1>
+      </div>
+      <div>
+        <form class="clear" method="post" action="#">
+          <fieldset>
+            <legend>Search:</legend>
+            <input type="search" value="" placeholder="Search Here&hellip;">
+            <button class="fas fa-search" type="submit" title="Search"><em>Search</em></button>
+          </fieldset>
+        </form>
+      </div>
+    </section>
+    <!-- ################################################################################################ -->
+  </header>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row2">
+  <nav id="mainav" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <ul class="clear">
+      <li class="active"><a href="../index.html">Home</a></li>
+      <li><a class="drop" href="#">Pages</a>
+        <ul>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="full-width.html">Member's Profile</a></li>
+          <li><a href="sidebar-left.html">Group's Profile</a></li>
+          <li><a href="headline_text.html">Scraping</a></li>
+		  <li><a href="scraping_apple_music.html">Scraping 2</a></li>
+    
+    <!-- ################################################################################################ -->
+  </nav>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper bgded overlay" style="background-image:url('../images/demo/backgrounds/01.png');">
+  <div id="breadcrumb" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <h6 class="heading">Scraping</h6>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Pages</a></li>
+      <li><a href="#">Scraping</a></li>
+    </ul>
+    <!-- ################################################################################################ -->
+  </div>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row3">
+  <main class="hoc container clear"> 
+    <!-- main body -->
+    <!-- ################################################################################################ -->
+    <div class="content"> 
+      <!-- ################################################################################################ -->
+      <div id="chart-long" style="margin-left: auto; margin-rigth:auto;"></div>
+      <div id="chart-most" style="margin-left: auto; margin-rigth:auto;"></div>
+      <div id="chart-local" style="margin-left: auto; margin-rigth:auto;"></div>
+      <div id="chart-man"></div>
+      <!-- ################################################################################################ -->
+    </div>
+    <!-- ################################################################################################ -->
+    <!-- / main body -->
+    <div class="clear"></div>
+  </main>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row5">
+  <div id="copyright" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <p class="fl_left">Copyright &copy; 2018 - All Rights Reserved - <a href="#">Domain Name</a></p>
+    <p class="fl_right">Template by <a target="_blank" href="https://www.os-templates.com/" title="Free Website Templates">OS Templates</a></p>
+    <!-- ################################################################################################ -->
+  </div>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<a id="backtotop" href="#top"><i class="fas fa-chevron-up"></i></a>
+<!-- JAVASCRIPTS -->
+<script src="../layout/scripts/jquery.min.js"></script>
+<script src="../layout/scripts/jquery.backtotop.js"></script>
+<script src="../layout/scripts/jquery.mobilemenu.js"></script>
+</body>
+</html>
