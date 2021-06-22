@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1">
     <!-- site metas -->
-    <title>Spicyo</title>
+    <title>GoBall</title>
     <meta name="keywords" content="">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -29,7 +29,7 @@
 </head>
 <!-- body -->
 
-<body class="main-layout about_page">
+<body class="main-layout Contact_page">
     <!-- loader  -->
     <div class="loader_bg">
         <div class="loader"><img src="images/loading.gif" alt="" /></div>
@@ -51,17 +51,43 @@
                     <li >
                         <a href="index.html">Home</a>
                     </li>
+                    <li>
+                        <a href="about.html">Annotation Graph</a>
+                    </li>
+                    <li>
+                        <a href="recipe.html">Resume</a>
+                    </li>
+                    <li>
+                        <a href="blog.html">Labelling Data</a>
+                    </li>
                     <li class="active">
-                        <a href="about.html">About</a>
+                        <a href="contact.html">Contact</a>
                     </li>
-                    <li>
-                        <a href="recipe.html">Recipe</a>
-                    </li>
-                    <li>
-                        <a href="blog.html">Blog</a>
-                    </li>
-                    <li>
-                        <a href="contact.html">Contact Us</a>
+                </ul>
+
+            </nav>
+        </div>
+<body class="main-layout about_page">
+    <!-- loader  -->
+    <div class="loader_bg">
+        <div class="loader"><img src="images/loading.gif" alt="" /></div>
+    </div>
+
+    <div class="wrapper">
+    <!-- end loader -->
+
+     <div class="sidebar">
+            <!-- Sidebar  -->
+            <nav id="sidebar">
+
+                <div id="dismiss">
+                    <i class="fa fa-arrow-left"></i>
+                </div>
+
+                <ul class="list-unstyled components">
+
+                    <li >
+                 
                     </li>
                 </ul>
 
@@ -82,10 +108,7 @@
                     <div class="full">
                         <div class="right_header_info">
                             <ul>
-                                <li class="dinone">Contact Us : <img style="margin-right: 15px;margin-left: 15px;" src="images/phone_icon.png" alt="#"><a href="#">987-654-3210</a></li>
-                                <li class="dinone"><img style="margin-right: 15px;" src="images/mail_icon.png" alt="#"><a href="#">demo@gmail.com</a></li>
-                                <li class="dinone"><img style="margin-right: 15px;height: 21px;position: relative;top: -2px;" src="images/location_icon.png" alt="#"><a href="#">104 New york , USA</a></li>
-                                <li class="button_user"><a class="button active" href="#">Login</a><a class="button" href="#">Register</a></li>
+                                <li class="dinone"><img style="margin-right: 15px;" src="images/mail_icon.png" alt="#" height="60px" width="60px"><a href="#">Go Ball</a></li>
                                 <li><img style="margin-right: 15px;" src="images/search_icon.png" alt="#"></li>
                                 <li>
                                     <button type="button" id="sidebarCollapse">
@@ -106,7 +129,7 @@
             <div class="row">
                <div class="col-md-12">
                   <div class="title">
-                     <h2>About</h2>
+                     <h2>ANNOTATION GRAPH</h2>
                     
                   </div>
                </div>
@@ -119,10 +142,13 @@
       <div class="row">
          <div class="col-md-12">
              <div class="title">
-                <i><img src="images/title.png" alt="#"/></i>
+                <i><img src="images/title.png" alt="#" height="400" width="400"/></i>
+                <head>
+                    <title>Atribut Loop di Tag Marquee</title>
+                   </head>
+                   
                 
-                <span>It is a long established fact that a reader will be distracted by the readable content of a
-                   <br> page when looking at its layout. The point of using Lorem
+                <span> <h3 style="font-size: 30px;"> <marquee loop="100" behavior="slide" width="1350">Here's a graph of the percentage comparison between types of the comments </marquee> </h3> <br> 
                 </span>
              </div>
           </div>
@@ -130,14 +156,61 @@
        <div class="row">
          <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
              <div class="about_box">
-                 <h3>Best Food</h3>
-                 <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscureContrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard </p>
+                <h3 style="font-size: 35px;"> THE GRAPHIC </h3>
+                 <p> 
+
+                 </p>
                  <a href="#">Read More <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
              </div>
          </div>
           <div class="col-xl-5 col-lg-5 col-md-10 col-sm-12 about_img_boxpdnt">
              <div class="about_img">
-                 <figure><img src="images/about-img.jpg" alt="#/"></figure>
+                <div id="chart-container"></div>
+                <html>
+<head>
+	<title>My first chart using FusionCharts Suite XT</title>
+	<script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"></script>
+	<script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"></script>
+	<script type="text/javascript">
+		FusionCharts.ready(function(){
+			var chartObj = new FusionCharts({
+    type: 'pie3d',
+    renderAt: 'chart-container',
+    width: '450',
+    height: '300',
+    dataFormat: 'json',
+    dataSource: {
+        "chart": {
+            "caption": "Split of Comments by the Types",
+            "subCaption": "From Football Fanbase",
+            "numberPrefix": "",
+            "showPercentInTooltip": "0",
+            "decimals": "1",
+            "useDataPlotColorForLabels": "1",
+            //Theme
+            "theme": "fusion"
+        },
+        "data": [{
+            "label": "Positive Comments",
+            "value": "100"
+        }, {
+            "label": "Negative Comments",
+            "value": "80"
+        }, {
+            "label": "Neutral Comments",
+            "value": "55"
+        }]
+    }
+}
+);
+			chartObj.render();
+		});
+	</script>
+	</head>
+	<body>
+	</body>
+</html>
+
              </div>
          </div>      
        </div> 
@@ -152,58 +225,38 @@
             <div class="container-fluid">
                 <div class="row">
                   <div class=" col-md-12">
-                    <h2>Request  A<strong class="white"> Call  Back</strong></h2>
+                    <h2><strong class="white"> </strong></h2>
                   </div>
                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
                       
                         <form class="main_form">
-                            <div class="row">
-                             
-                                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                                    <input class="form-control" placeholder="Name" type="text" name="Name">
-                                </div>
-                                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                                    <input class="form-control" placeholder="Email" type="text" name="Email">
-                                </div>
-                                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                                    <input class="form-control" placeholder="Phone" type="text" name="Phone">
-                                </div>
-                                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                                    <textarea class="textarea" placeholder="Message" type="text" name="Message"></textarea>
-                                </div>
-                                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                                    <button class="send">Send</button>
-                                </div>
-                            </div>
+                          
                         </form>
                     </div>
                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
-                        <div class="img-box">
-                            <figure><img src="images/img.jpg" alt="img" /></figure>
-                        </div>
+                       
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-12">
                         <div class="footer_logo">
-                          <a href="index.html"><img src="images/logo1.jpg" alt="logo" /></a>
+                          <a href="index.html"><img src="images/logo1.png" alt="logo" /></a>
                         </div>
                     </div>
                     <div class="col-md-12">
                         <ul class="lik">
                             <li > <a href="index.html">Home</a></li>
-                            <li class="active"> <a href="about.html">About</a></li>
-                            <li> <a href="recipe.html">Recipe</a></li>
-                            <li> <a href="blog.html">blog</a></li>
-                            <li> <a href="contact.html">Contact us</a></li>
+                            <li class="active"> <a href="about.html">Annotation Graph</a></li>
+                            <li> <a href="recipe.html">Resume</a></li>
+                            <li> <a href="blog.html">Labelling Data</a></li>
+                            <li> <a href="contact.html">Contact</a></li>
                         </ul>
                     </div>
                     <div class="col-md-12">
                         <div class="new">
-                            <h3>Newsletter</h3>
+                            <h3></h3>
                             <form class="newtetter">
-                                <input class="tetter" placeholder="Your email" type="text" name="Your email">
-                                <button class="submit">Subscribe</button>
+                            
                             </form>
                         </div>
                     </div>
@@ -211,7 +264,7 @@
             </div>
             <div class="copyright">
                 <div class="container">
-                    <p>© 2019 All Rights Reserved. Design by<a href="https://html.design/"> Free Html Templates</a></p>
+                    <p>© 2019 All Rights Reserved. Design by Disco Ninjas<a href="https://html.design/"></a></p>
                 </div>
             </div>
         </div>
